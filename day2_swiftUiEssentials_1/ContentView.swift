@@ -9,8 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        VStack {//vertical container
+            VStack(alignment: .leading) {
+
+                Text("Hello, swift!")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundColor(Color.green)
+                
+                HStack {
+                    //horizontal container
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                        .fontWeight(.light)
+                    
+                    Spacer()//weight 1
+                    Text("California")
+                        .font(.subheadline)
+                }
+            }
             .padding()
+        }
     }
 }
 
